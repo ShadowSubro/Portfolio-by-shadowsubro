@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Project 1",
+        "description": "This is just an example project just like service card, and i will be adding my own projects later as I completely build my website.",
+        "image": "project1.png",
+        "link": "#"
+    },
+    {
+        "title": "Project 2",
+        "description": "This is just an example project just like service card, and i will be adding my own projects later as I completely build my website.",
+        "image": "project2.png",
+        "link": "#"
+    },
+    {
+        "title": "Project 3",
+        "description": "This is just an example project just like service card, and i will be adding my own projects later as I completely build my website.",
+        "image": "project3.png",
+        "link": "#"
+    },
+    {
+        "title": "Project 4",
+        "description": "This is just an example project just like service card, and i will be adding my own projects later as I completely build my website.",
+        "image": "project4.png",
+        "link": "#"
+    },
+    {
+        "title": "Project 5",
+        "description": "This is just an example project just like service card, and i will be adding my own projects later as I completely build my website.",
+        "image": "project5.png",
+        "link": "#"
+    },
+    {
+        "title": "Project 6",
+        "description": "This is just an example project just like service card, and i will be adding my own projects later as I completely build my website.",
+        "image": "project6.png",
+        "link": "#"
+    }
+]

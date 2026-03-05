@@ -14,6 +14,40 @@
 	--second-bg-color: #101010;
 	--text-color: white;
 	--main-color: #ea580c;
+	--gradient-high: #DF8908;
+	--gradient-low: #ff1D15;
+	--btn-color: white;
+}
+
+.theme1 {
+	--main-color: #dbea0c;
+	--gradient-high: #8ddf08;
+	--gradient-low: #ffd415;
+}
+
+.theme2 {
+	--main-color: #0ceadf;
+	--gradient-high: #08bfdf;
+	--gradient-low: #15ffeb;
+	--btn-color: black;
+}
+
+.theme3 {
+	--main-color: #0c40ea;
+	--gradient-high: #080cdf;
+	--gradient-low: #158eff;
+}
+
+.theme4 {
+	--main-color: #ea0c0c;
+	--gradient-high: #df0808;
+	--gradient-low: #ff1515;
+}
+
+.theme5 {
+	--main-color: #0cea17;
+	--gradient-high: #08df69;
+	--gradient-low: #15ff15;
 }
 
 html {
@@ -59,7 +93,7 @@ body {
 }
 
 span {
-	background: linear-gradient(270deg, #DF8908 10%, #ff1D15 100%);
+	background: linear-gradient(270deg, var(--gradient-high) 10%, var(--gradient-low) 100%);
 	background-clip: text;
 	color: transparent;
 }
@@ -82,11 +116,11 @@ span {
 	font-size: 1.8rem;
 	padding: 1rem 2rem;
 	border-radius: 3rem;
-	background: linear-gradient(270deg, #DF8908 10%, #ff1D15 100%);
+	background: linear-gradient(270deg, var(--gradient-high) 10%, var(--gradient-low) 100%);
 	letter-spacing: 1px;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
-	color: white;
+	color: var(--btn-color);
 	border: none;
 	text-wrap: nowrap;
 }
@@ -495,5 +529,184 @@ section {
 
 	.contact form {
 		flex-direction: column;
+	}
+}
+
+@media (max-width: 1024px) {
+	.home-content h1 {
+		font-size: 6rem;
+	}
+	.home-content h3 {
+		font-size: 3rem;
+	}
+	.home-img img {
+		width: 40vw;
+	}
+	.about-content h2 {
+		font-size: 5rem;
+	}
+	.heading {
+		font-size: 5rem;
+	}
+	.services-container {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+	.projects-box {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+	section {
+		padding: 8rem 10%;
+	}
+}
+
+@media (max-width: 768px) {
+	.home-content h1 {
+		font-size: 5rem;
+	}
+	.home-content h3 {
+		font-size: 2.5rem;
+	}
+	.home-content p {
+		font-size: 1.3rem;
+	}
+	.home-img img {
+		width: 50vw;
+	}
+	.about-content h2 {
+		font-size: 4rem;
+	}
+	.about-content p {
+		font-size: 1.5rem;
+	}
+	.heading {
+		font-size: 4rem;
+	}
+	.services-container {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	.projects-box {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+	.service-info h4 {
+		font-size: 3rem;
+	}
+	.service-info p {
+		font-size: 1.2rem;
+	}
+	.project-card h3 {
+		font-size: 2.5rem;
+	}
+	.project-card p {
+		font-size: 1.4rem;
+	}
+	section {
+		padding: 6rem 5%;
+	}
+	.header {
+		padding: 2rem 5%;
+	}
+	.navbar a {
+		font-size: 1.5rem;
+		margin-left: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.home-content h1 {
+		font-size: 4rem;
+	}
+	.home-content h3 {
+		font-size: 2rem;
+	}
+	.home-content p {
+		font-size: 1.2rem;
+	}
+	.home-img img {
+		width: 60vw;
+	}
+	.about-content h2 {
+		font-size: 3rem;
+	}
+	.about-content p {
+		font-size: 1.3rem;
+	}
+	.heading {
+		font-size: 3rem;
+	}
+	.services-container {
+		grid-template-columns: 1fr;
+	}
+	.projects-box {
+		grid-template-columns: 1fr;
+	}
+	.service-info h4 {
+		font-size: 2.5rem;
+	}
+	.service-info p {
+		font-size: 1.1rem;
+	}
+	.project-card h3 {
+		font-size: 2rem;
+	}
+	.project-card p {
+		font-size: 1.2rem;
+	}
+	.btn {
+		padding: 0.8rem 2rem;
+		font-size: 1.5rem;
+	}
+	.social-icons a {
+		font-size: 2.5rem;
+		padding: 0.8rem;
+	}
+	section {
+		padding: 5rem 3%;
+	}
+	.header {
+		padding: 1.5rem 3%;
+	}
+	.logo {
+		font-size: 2.5rem;
+	}
+	.navbar {
+		width: 70%;
+	}
+	.navbar a {
+		font-size: 1.8rem;
+		margin: 2rem 0;
+	}
+	.contact form {
+		gap: 2rem;
+	}
+	.footer ul li {
+		display: block;
+		margin: 1rem 0;
+	}
+}
+
+@media (max-width: 320px) {
+	.home-content h1 {
+		font-size: 3rem;
+	}
+	.home-content h3 {
+		font-size: 1.8rem;
+	}
+	.home-img img {
+		width: 70vw;
+	}
+	.about-content h2 {
+		font-size: 2.5rem;
+	}
+	.heading {
+		font-size: 2.5rem;
+	}
+	.service-info h4 {
+		font-size: 2rem;
+	}
+	.project-card h3 {
+		font-size: 1.8rem;
+	}
+	.btn {
+		font-size: 1.3rem;
 	}
 }
